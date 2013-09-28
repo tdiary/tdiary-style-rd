@@ -13,8 +13,6 @@
 # ref_extension codes come from rd2html-ext
 #   http://raa.ruby-lang.org/list.rhtml?name=rd2html-ext
 #
-# Copyright (C) 2003, UECHI Yasumasa <uechi@potaway.net>
-# You can distribute this under GPL.
 #
 require 'rd/rdfmt'
 require 'rd/rd2html-lib'

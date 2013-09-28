@@ -1,6 +1,6 @@
 # Tdiary::Style::Rd
 
-TODO: Write a gem description
+rd_style.rb: RD style for tDiary 2.x format. based on Wiki style which Copyright belongs to TADA Tadashi.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+if you want to use this style, install RDtool and add @style into tdiary.conf below:
+
+    @style = 'RD'
+
+about RDtool: https://github.com/uwabami/rdtool
+
+ref_extension codes come from [rd2html-ext](http://www.rubyist.net/~rubikitch/computer/rd2html-ext/)
 
 ## Contributing
 

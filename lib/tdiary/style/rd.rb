@@ -1,19 +1,5 @@
 # -*- coding: utf-8; -*-
-#
-# rd_style.rb: RD style for tDiary 2.x format. $Revision: 1.32 $
-# based on Wiki style which Copyright belongs to TADA Tadashi.
-#
-# if you want to use this style, install RDtool
-# and add @style into tdiary.conf below:
-#
-#    @style = 'RD'
-#
-# about RDtool: http://raa.ruby-lang.org/list.rhtml?name=rdtool
-#
-# ref_extension codes come from rd2html-ext
-#   http://raa.ruby-lang.org/list.rhtml?name=rd2html-ext
-#
-#
+
 require 'rd/rdfmt'
 require 'rd/rd2html-lib'
 

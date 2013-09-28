@@ -177,7 +177,7 @@ module TDiary
 
 			attr_reader :author, :categories, :subtitle, :stripped_subtitle
 			attr_reader :body_to_html, :subtitle_to_html, :stripped_subtitle_to_html
-			
+
 			def initialize( fragment, author = nil )
 				@author = author
 				if /\A=(?!=)/ =~ fragment then
@@ -198,7 +198,7 @@ module TDiary
 				@stripped_subtitle_to_html = manufacture(@stripped_subtitle, true)
 				@body_to_html = manufacture(@body, false)
 			end
-			
+
 			def subtitle=(subtitle)
 				cat_str = ""
 				@categories.each {|cat|
@@ -208,15 +208,15 @@ module TDiary
 				@subtitle = subtitle ? (cat_str + subtitle) : nil
 				@stripped_subtitle = strip_subtitle
 			end
-			
+
 			def body=(str)
 				@body = str
 			end
-			
+
 			def body
 				@body.dup
 			end
-			
+
 			def categories=(categories)
 				@categories = categories
 				cat_str = ""
@@ -288,18 +288,16 @@ module TDiary
 		end
 
 		class RdDiary
-			include CategorizableDiary
-			
 			def initialize( date, title, body, modified = Time::now )
 				init_diary
 				replace( date, title, body )
 				@last_modified = modified
 			end
-			
+
 			def style
 				'RD'
 			end
-			
+
 			def append( body, author = nil )
 				section = nil
 				body.lines.each do |l|
@@ -318,7 +316,7 @@ module TDiary
 				@last_modified = Time::now
 				self
 			end
-			
+
 			def add_section(subtitle, body)
 				sec = RDSection::new("\n")
 				sec.subtitle = subtitle
@@ -326,7 +324,7 @@ module TDiary
 				@sections << sec
 				@sections.size
 			end
-			
+
 			def to_html( opt = {}, mode = :HTML )
 				r = ''
 				idx = 1

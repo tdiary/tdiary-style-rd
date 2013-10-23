@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shibata.hiroshi@gmail.com"]
   spec.description   = %q{RD Style for tDiary}
   spec.summary       = %q{RD Style for tDiary}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/tdiary/tdiary-style-rd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

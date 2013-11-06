@@ -5,7 +5,7 @@ require 'tdiary/style/rd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tdiary-style-rd"
-  spec.version       = Tdiary::Style::Rd::VERSION
+  spec.version       = TDiary::Style::Rd::VERSION
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["shibata.hiroshi@gmail.com"]
   spec.description   = %q{RD Style for tDiary}

@@ -1,4 +1,4 @@
-# Tdiary::Style::Rd
+# TDiary::Style::Rd
 
 rd_style.rb: RD style for tDiary 2.x format. based on Wiki style which Copyright belongs to TADA Tadashi.
 

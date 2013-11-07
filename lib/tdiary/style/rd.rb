@@ -334,8 +334,6 @@ module TDiary
 				end
 				return r
 			end
-
-			undef :to_html4, :to_chtml
 		end
 	end
 end

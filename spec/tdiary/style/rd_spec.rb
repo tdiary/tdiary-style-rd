@@ -32,7 +32,7 @@ honbun
 </div>
 				EOF
 			end
-			it { @diary.to_html.should eq @html }
+			it { expect(@diary.to_html).to eq @html }
 		end
 	end
 
@@ -69,7 +69,7 @@ replace
 </div>
 			EOF
 		end
-		it { @diary.to_html.should eq @html }
+		it { expect(@diary.to_html).to eq @html }
 	end
 
 	describe '#add_section' do
@@ -102,7 +102,7 @@ honbun
 </div>
 			EOF
 		end
-		it { @diary.to_html.should eq @html }
+		it { expect(@diary.to_html).to eq @html }
 	end
 
 	describe '#delete_section' do
@@ -127,7 +127,7 @@ honbun
 </div>
 			EOF
 		end
-		it { @diary.to_html.should eq @html }
+		it { expect(@diary.to_html).to eq @html }
 	end
 
 	describe 'test_rd_style_plugin' do
@@ -165,7 +165,7 @@ aaa</p>
 </div>
 				EOF
 			end
-			it { @diary.to_html.should eq @html }
+			it { expect(@diary.to_html).to eq @html }
 		end
 	end
 
@@ -187,7 +187,7 @@ aaa</p>
 </div>
 				EOF
 			end
-			it { @diary.to_html.should eq @html }
+			it { expect(@diary.to_html).to eq @html }
 		end
 	end
 
@@ -205,8 +205,8 @@ RD syntax error: line 1:
 				EOF
 			end
 			it {
-				lambda{ @diary.to_html }.should raise_error(SyntaxError){ |e|
-					e.message.should eq @exception_message
+				expect{ @diary.to_html }.to raise_error(SyntaxError){ |e|
+					expect(e.message).to eq @exception_message
 				}
 			}
 		end

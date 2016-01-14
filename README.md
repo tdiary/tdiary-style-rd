@@ -4,17 +4,13 @@ rd_style.rb: RD style for tDiary 2.x format. based on Wiki style which Copyright
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your tDiary's Gemfile.local:
 
     gem 'tdiary-style-rd'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install tdiary-style-rd
 
 ## Usage
 
